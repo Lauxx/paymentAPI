@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: [
-    // './components/config/routes'
+    './components/animalCard'
   ],
   output: {
     path: path.join(__dirname, 'static'),

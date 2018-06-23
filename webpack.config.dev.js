@@ -4,8 +4,8 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'eval',
   entry: [
-    // 'webpack-hot-middleware/client',
-    // './components/config/routes'
+    'webpack-hot-middleware/client',
+    './components/animalCard'
   ],
   output: {
     path: path.join(__dirname, 'static'),
