@@ -16,13 +16,13 @@ app.use(bodyParser.urlencoded({extended: true}));//Mounting MiddleWare, software
 app.use(bodyParser.json());//Returns middleware that only parses 'json' and only looks at requests where the Content-Type header matches the type option. This parser accepts any Unicode encoding of the body and supports automatic inflation of gzip and deflate encodings.
 app.use(express.static(__dirname + '/views'));//Used to serve static files such as images, CSS files, and JS files. Looking for a folder called 'public' to host these static files - express.static() - built-in middleware function in Express
 
-// var animalController = require('./controls/animalControl.js');
+var animalController = require('./controls/animalControl.js');
 
-// app.post('/animals', animalController.create);
-// app.get('/animals', animalController.read);
-// app.get('/animals/:id', animalController.readById);
-// app.put('/animals/:id', animalController.update);
-// app.delete('/animals/:id', animalController.delete);
+app.post('/animals', animalController.create);
+app.get('/animals', animalController.read);
+app.get('/animals/:id', animalController.readById);
+app.put('/animals/:id', animalController.update);
+app.delete('/animals/:id', animalController.delete);
 
 
 if (process.env.NODE_ENV === 'production') {
