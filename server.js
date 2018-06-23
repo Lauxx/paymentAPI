@@ -58,7 +58,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 mongoose.connect('mongodb://localhost/paymentApi');//Mongoose = ORM (Object Relational Mapper) - connectivity point to database. Run in terminal - sudo mongod; sets up connection to database
-mongoose.connection.once('useMongoClient', function(){
+mongoose.connection.once('open', function(){
 	console.log("Connected to your database.");
 });
 
