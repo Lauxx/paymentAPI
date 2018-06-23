@@ -1,2 +1,2 @@
-!function(e){function t(o){if(r[o])return r[o].exports;var n=r[o]={exports:{},id:o,loaded:!1};return e[o].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var r={};return t.m=e,t.c=r,t.p="/static/",t(0)}([function(e,t,r){e.exports=r(1)},function(e,t){"use strict";var r=React.createElement("h1",null,"Hello, world");ReactDOM.render(r,document.getElementById("root"))}]);
+!function(n){function o(t){if(r[t])return r[t].exports;var e=r[t]={exports:{},id:t,loaded:!1};return n[t].call(e.exports,e,e.exports,o),e.loaded=!0,e.exports}var r={};return o.m=n,o.c=r,o.p="/static/",o(0)}([function(n,o,r){!function(){throw new Error('Cannot find module "./components/animaApp"')}()}]);
 //# sourceMappingURL=bundle.js.map

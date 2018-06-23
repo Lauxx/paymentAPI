@@ -1,0 +1,13 @@
+.animalCard{
+	text-align: center;
+}
+
+.pageLayout{
+	background-color: grey;
+}
+
+.stockPhoto{
+	width: 250px;
+	height: 200px;
+	margin-left: 10%;
+}

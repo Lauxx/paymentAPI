@@ -8,7 +8,9 @@ var AnimalSchema = new Schema({//calling 'new' - constructor function; new insta
 	name: String, 
 	age: Number, 
 	color: String, 
-	gender: String
+	gender: String,
+	image: String,
+	price: Number
 });
 
 module.exports = mongoose.model('Animals', AnimalSchema);
