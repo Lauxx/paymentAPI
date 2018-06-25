@@ -47,18 +47,16 @@ const Button = ({
     requestPayerEmail
   };
 
-  const paymentRequest = new PaymentRequest(
-    paymentMethods,
-    paymentDetails,
-    options
-  );
-
   const showUI = () =>
-    paymentRequest
-      .show()
+      new PaymentRequest(
+      paymentMethods,
+      paymentDetails,
+      options
+      ).show()
       .then(paymentResponse => {
         return paymentResponse.complete().then(() => {
           onSuccess(paymentResponse);
+          alert("Thanks for your purchase!");
         });
       })
       .catch(err => {
