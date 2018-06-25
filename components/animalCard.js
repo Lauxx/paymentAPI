@@ -58,9 +58,9 @@ const Button = ({
 
   if (window.PaymentRequest) {
     return (
-      <span role="button" onClick={showUI}>
-        {children}
-      </span>
+    	<button type="button" className="btn btn-success" onClick={showUI}>
+    	  	{children}
+    	</button>
     );
   } else {
     // No support. Proceed the old school way
@@ -75,11 +75,8 @@ Button.propTypes = {
   supportedMethods: PropTypes.array,
   methodData: PropTypes.object,
   /** Gets called when the user clicks on the button */
-  onClick: PropTypes.func,
   onSuccess: PropTypes.func,
-  onError: PropTypes.func,
-  requestPayerName: PropTypes.bool,
-  requestPayerEmail: PropTypes.bool
+  onError: PropTypes.func
 };
 
 Button.defaultProps = {
@@ -109,7 +106,6 @@ var AnimalCard = React.createClass({
 							<h4 className=""> Color: { this.props.color } </h4>
 							<h4 className=""> Age: { this.props.age } </h4>
 							<h4 className=""> Price: ${ this.props.price } USD</h4>
-							<button type="button" className="btn btn-success">
 								<Button
 								    total= {this.props.price + 5}
 								    displayItems={[
@@ -128,9 +124,9 @@ var AnimalCard = React.createClass({
 								        }
 								      }
 								    ]}
-								    onSuccess={(data) => console.log(data) }
-								>Purchase</Button>
-							</button>
+								    onSuccess={(data) => console.log(data) } >
+									Purchase
+								</Button>
 						</div>	
 					</div>
 				</div>
