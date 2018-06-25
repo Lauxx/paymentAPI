@@ -23,8 +23,11 @@
     "cors": "^2.8.4",
     "express": "^4.16.2",
     "mongoose": "^4.13.5",
+    "prop-types": "^15.6.2",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "react-payment-request": "^0.1.2",
+    "react-payment-request-api": "^2.1.0",
     "react-router": "^2.4.1"
   },
   "devDependencies": {

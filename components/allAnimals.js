@@ -2,6 +2,7 @@ var React = require('react');
 var AnimalCard = require('./animalCard.js');
 
 
+
 function AllAnimals(props){
 	
 	var animal = props.animals.map(function(item){
@@ -23,6 +24,7 @@ function AllAnimals(props){
 			<div>
 				{animal}
 			</div>
+			
 			)
 
 };

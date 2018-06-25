@@ -10,7 +10,8 @@ var AnimalSchema = new Schema({//calling 'new' - constructor function; new insta
 	color: String, 
 	gender: String,
 	image: String,
-	price: Number
+	price: Number,
+	currency: String
 });
 
 module.exports = mongoose.model('Animals', AnimalSchema);

@@ -2,15 +2,13 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var AllAnimals = require('./allAnimals.js');
 
-var AnimalApp = React.createClass({
+class AnimalApp extends React.Component {
+	constructor(props){
+		super(props);
+		this.state = {animals: []};
+	}
 
-	getInitialState: function(){
-		return {
-			animals: []
-		}
-	},
-
-	getAllAnimalsFromServer: function(){
+	getAllAnimalsFromServer(){
 		var self = this;
 		$.ajax({
 			url: '/animals',
@@ -18,17 +16,17 @@ var AnimalApp = React.createClass({
 		}).done(function(data){
 			self.setState({animals: data})
 		})
-	},
+	}
 
-	componentDidMount: function(){
+	componentDidMount(){
 		this.getAllAnimalsFromServer();
-	},
+	}
 
 
-	render: function(){
+	render(){
 		return this.state.animals ? <AllAnimals animals={ this.state.animals } /> : null;
 	}
-});
+}
 
 
 
