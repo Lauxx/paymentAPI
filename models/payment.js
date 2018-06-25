@@ -10,9 +10,9 @@ var PaymentSchema = new Schema({//calling 'new' - constructor function; new inst
       supportedTypes: ['debit', 'credit'],
 	},
 	paymentDetails: {
-		label: 'Total',
+		label: String,
 		amount:{
-		  currency: 'USD',
+		  currency: String,
 		  value: Number
 		}
 	}
