@@ -1,3 +1,12 @@
+/*
+React Hierarchy for this Application
+
+Animal App
+	All Animals
+		Animal Card
+
+*/
+
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -90,11 +99,9 @@ Button.defaultProps = {
   }
 };
 
-var AnimalCard = React.createClass({
+class AnimalCard extends React.Component{
 
-
-	render: function(){
-
+	render(){
 		return (
 			<div className="card-column">
 				<div className="col-sm-4">
@@ -131,10 +138,8 @@ var AnimalCard = React.createClass({
 					</div>
 				</div>
 			</div>
-			)
+		)
 	}
-});
-
-
+}
 
 module.exports = AnimalCard;

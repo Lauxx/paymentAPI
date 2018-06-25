@@ -1,6 +1,14 @@
-var React = require('react');
-var AnimalCard = require('./animalCard.js');
+/*
+React Hierarchy for this Application
 
+Animal App
+	All Animals
+		Animal Card
+
+*/
+
+import React from "react";
+import AnimalCard from './animalCard.js';
 
 
 function AllAnimals(props){

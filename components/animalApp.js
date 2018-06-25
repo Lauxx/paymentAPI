@@ -1,6 +1,16 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-var AllAnimals = require('./allAnimals.js');
+/*
+React Hierarchy for this Application
+
+Animal App
+	All Animals
+		Animal Card
+
+*/
+
+import React from "react";
+import ReactDOM from "react-dom";
+import AllAnimals from "./allAnimals.js";
+
 
 class AnimalApp extends React.Component {
 	constructor(props){
